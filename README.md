@@ -18,7 +18,7 @@ This repository contains an **AutoHotkey (AHK) script** that creates custom **ke
 - 🔗 **[Blog Post on My Website](YourWebsiteLinkHere)**   
 
 🎥 **Watch the Tutorial on YouTube:**  
-- ▶️ **[YouTube Video](YourYouTubeVideoLinkHere)**  
+- ▶️ **[YouTube Video](https://youtu.be/wd-ThKOChdk))**  
 
 ## **Contribute**  
 Feel free to **fork** and improve the script! PRs are welcome. 😊  
