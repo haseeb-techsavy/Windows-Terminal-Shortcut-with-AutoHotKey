@@ -32,7 +32,7 @@ You can **customize the shortcut keys** by editing the `Terminal-Shortcut.ahk` s
 
 ## **Learn More**  
 📖 **Read the Full Guide:**  
-- 🔗 **[Blog Post on My Website](YourWebsiteLinkHere)**   
+- 🔗 **[Blog Post on My Website](https://www.haseebthetechguru.com/open-windows-terminal-with-shortcut-key)**   
 
 🎥 **Watch the Tutorial on YouTube:**  
 - ▶️ **[YouTube Video](https://youtu.be/wd-ThKOChdk))**  
