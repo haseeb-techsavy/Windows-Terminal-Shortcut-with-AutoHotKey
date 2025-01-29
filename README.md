@@ -102,5 +102,4 @@ You can **customize the shortcut keys** by editing the `Terminal-Shortcut.ahk` s
     } catch Error as e {
         Run '*RunAs wt.exe -p "PowerShell"', , 'UseErrorLevel'
     }
-}```
-
+}
