@@ -30,6 +30,7 @@ You can **customize the shortcut keys** by editing the `Terminal-Shortcut.ahk` s
    - `#` = **Windows Key**  
 4. Save the file and **double-click** to reload the script.
 
+### **Example of Modified Code:**
 ```^+t::  ; Ctrl+Shift+T for regular terminal
 {
     try {
@@ -95,6 +96,7 @@ You can **customize the shortcut keys** by editing the `Terminal-Shortcut.ahk` s
         Run '*RunAs wt.exe -p "PowerShell"', , 'UseErrorLevel'
     }
 }```
+
 
 ## **Learn More**  
 📖 **Read the Full Guide:**  
