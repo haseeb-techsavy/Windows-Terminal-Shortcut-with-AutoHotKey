@@ -30,6 +30,72 @@ You can **customize the shortcut keys** by editing the `Terminal-Shortcut.ahk` s
    - `#` = **Windows Key**  
 4. Save the file and **double-click** to reload the script.
 
+```^+t::  ; Ctrl+Shift+T for regular terminal
+{
+    try {
+        hwnd := WinExist("A")
+        if (!hwnd) {
+            Run "wt.exe"
+            return
+        }
+
+        class := WinGetClass("ahk_id " hwnd)
+        
+        if (class = "CabinetWClass") {
+            shell := ComObject("Shell.Application")
+            
+            for window in shell.Windows {
+                try {
+                    if (window.HWND = hwnd) {
+                        cwd := window.Document.Folder.Self.Path
+                        if DirExist(cwd) {
+                            Run 'wt.exe -d "' cwd '"'
+                            return
+                        }
+                    }
+                }
+            }
+        }
+        
+        Run "wt.exe"
+    } catch Error as e {
+        Run "wt.exe"
+    }
+}
+
+^!t::  ; Ctrl+Alt+T for admin PowerShell
+{
+    try {
+        hwnd := WinExist("A")
+        if (!hwnd) {
+            Run '*RunAs wt.exe -p "PowerShell"', , 'UseErrorLevel'
+            return
+        }
+
+        class := WinGetClass("ahk_id " hwnd)
+        
+        if (class = "CabinetWClass") {
+            shell := ComObject("Shell.Application")
+            
+            for window in shell.Windows {
+                try {
+                    if (window.HWND = hwnd) {
+                        cwd := window.Document.Folder.Self.Path
+                        if DirExist(cwd) {
+                            Run '*RunAs wt.exe -p "PowerShell" -d "' cwd '"', , 'UseErrorLevel'
+                            return
+                        }
+                    }
+                }
+            }
+        }
+        
+        Run '*RunAs wt.exe -p "PowerShell"', , 'UseErrorLevel'
+    } catch Error as e {
+        Run '*RunAs wt.exe -p "PowerShell"', , 'UseErrorLevel'
+    }
+}```
+
 ## **Learn More**  
 📖 **Read the Full Guide:**  
 - 🔗 **[Blog Post on My Website](YourWebsiteLinkHere)**   
