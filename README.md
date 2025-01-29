@@ -30,6 +30,13 @@ You can **customize the shortcut keys** by editing the `Terminal-Shortcut.ahk` s
    - `#` = **Windows Key**  
 4. Save the file and **double-click** to reload the script.
 
+## **Learn More**  
+📖 **Read the Full Guide:**  
+- 🔗 **[Blog Post on My Website](YourWebsiteLinkHere)**   
+
+🎥 **Watch the Tutorial on YouTube:**  
+- ▶️ **[YouTube Video](https://youtu.be/wd-ThKOChdk))**  
+
 ### **Example of Modified Code:**
 ```^+t::  ; Ctrl+Shift+T for regular terminal
 {
@@ -97,13 +104,3 @@ You can **customize the shortcut keys** by editing the `Terminal-Shortcut.ahk` s
     }
 }```
 
-
-## **Learn More**  
-📖 **Read the Full Guide:**  
-- 🔗 **[Blog Post on My Website](YourWebsiteLinkHere)**   
-
-🎥 **Watch the Tutorial on YouTube:**  
-- ▶️ **[YouTube Video](https://youtu.be/wd-ThKOChdk))**  
-
-## **Contribute**  
-Feel free to **fork** and improve the script! PRs are welcome. 😊  
